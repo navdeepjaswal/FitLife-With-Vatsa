@@ -1,0 +1,195 @@
+//banner
+.banner__section{
+    background: url("/src/assets/img/backgrounds/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.banner__section > * {
+    z-index: 2;
+}
+
+.banner__content{
+    margin: 0 auto;
+    width: fit-content;;
+    padding: 140px 0 180px;
+    h1{
+        font-size: 116px;
+        margin-bottom: 50px;
+    }
+    .video__area{
+        gap: 24px;
+        align-items: center;
+        display: flex;
+        .proces{
+            font-size: 20px;
+            color: var(--white);
+            width: 67px;
+        }
+    }
+    @include breakpoint(max-xxxl){
+        @include breakpoint(xl){
+            padding-left: 40px;
+        }
+    }
+    @include breakpoint(max-xxl){
+        h1{
+            font-size: 86px;
+            margin-bottom: 50px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-xl){
+        padding: 120px 0 150px;
+    }
+    @include breakpoint(max-lg){
+        padding: 90px 0 100px;
+        h1{
+            font-size: 68px;
+            margin-bottom: 50px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-md){
+        padding: 80px 0 85px;
+        h1{
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-sm){
+        padding: 60px 0 65px;
+        h1{
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-sm){
+        padding: 60px 0 60px;
+        h1{
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+        .video__area{
+            gap: 24px;
+            .video__80{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+            .proces{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.banner__thumb{
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    left: calc(50% - -120px);
+    bottom: 0;
+    @include breakpoint(max-xxl){
+        left: calc(50% - -80px);
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+//animation text
+.designers{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    color: transparent;
+    transition: all 0.5s;
+    position: relative;
+    &::before{
+        content: attr(data-text);
+        position: absolute;
+        color: var(--base);
+        width: 0px;
+        overflow: hidden;
+        animation: pulse-width 3s ease-in infinite;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--base);
+    }
+}
+
+@keyframes pulse-width {
+    50% {
+        width: 100%;
+    }
+}
+
+// Custom CSS
+.hone {
+    color: #ebbd44;
+}
+
+.hone-highlight{
+    color: #ed1c24;
+}
+
+.banner-man {
+    display: flex;
+    align-items: end;
+    transform: scaleX(-1);
+    height: 100%;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: red;
+  cursor: pointer;
+  transition: transform 1s ease, color 0.1s ease;
+}
+
+.underline:hover {
+  transform: scale(1.1);
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    bottom: -25px;
+    width: 100%;
+    height: 40px;
+    background-image: url(/src/assets/img/banner/underline.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
