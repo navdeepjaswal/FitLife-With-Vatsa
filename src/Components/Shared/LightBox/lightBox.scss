@@ -10,10 +10,9 @@
   justify-content: center;
   align-items: center;
   &__content {
-    max-width: 80%;
+    max-width: 55%;
     text-align: center;
     position: relative;
-    // padding: 20px;
     box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
 
     .close_button {
@@ -25,8 +24,9 @@
       cursor: pointer;
       font-size: 25px;
       font-weight: 700;
-      color: var(--white);
+      color: var(--white); 
     }
+
     .image-container {
       margin: 0 auto;
       width: 80%;
