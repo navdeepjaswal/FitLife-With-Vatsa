@@ -1,0 +1,60 @@
+.get-in-touch {
+  max-width: 600px;
+  margin: 4rem auto 1rem auto;
+  padding: 4rem auto 2rem auto;
+  border-radius: 1rem;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .icon {
+      color: white;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #edb04d; // Instagram pinkish tone
+      }
+    }
+  }
+
+  .signup-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}
+
+.get-in-touch {
+  .common__sub::before,
+  .common__sub::after {
+  content: none !important;
+  display: none !important;
+  }
+}
