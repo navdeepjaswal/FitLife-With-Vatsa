@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ScrollRestoration } from "react-router-dom";
+import AOS from "aos";            // ← import AOS
+import "aos/dist/aos.css";       // ← ensure the styles are in scope
 
 import About from "../Components/About/About";
 import Projects from "../Components/Projects/Projects";
@@ -17,25 +19,40 @@ const Home = () => {
   const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
-    setTimeout(function () {
+    // simulate data load
+    const t = setTimeout(() => {
       setIsFetching(false);
     }, 1000);
+    return () => clearTimeout(t);
   }, []);
+
+  useEffect(() => {
+    // once your preloader unmounts, re‐init & refresh AOS
+    if (!isFetching) {
+      AOS.init({ once: true });
+      AOS.refresh();
+    }
+  }, [isFetching]);
 
   return (
     <>
       {isFetching && <Preloader />}
-      <MarqueeWapper direction="left" items={images} />
-      <About />
-      <MarqueeWapper direction="right" items={images2} />
-      <Projects />
-      {/* <Metting /> */}
-      {/* <Services isHeading={true} /> */}
-      {/* <WorkeProcess /> */}
-      <Testimonial />
-      {/* <Blogs /> */}
-      <GetInTouch/>
-      <ScrollRestoration/>
+
+      {!isFetching && (
+        <>
+          <MarqueeWapper direction="left" items={images} />
+          <About />
+          <MarqueeWapper direction="right" items={images2} />
+          <Projects />
+          {/* <Metting /> */}
+          {/* <Services isHeading={true} /> */}
+          {/* <WorkeProcess /> */}
+          <Testimonial />
+          {/* <Blogs /> */}
+          <GetInTouch />
+          <ScrollRestoration />
+        </>
+      )}
     </>
   );
 };

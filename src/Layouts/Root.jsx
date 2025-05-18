@@ -1,16 +1,16 @@
 import React from "react";
+import { Outlet, useMatch } from "react-router-dom";
 import Header from "../Components/Shared/Header/Header";
-import Footer from "../Components/Shared/Footer/Footer";
-import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import Banner from "../Components/Banner/Banner";
+import Footer from "../Components/Shared/Footer/Footer";
 
-const Root = () => {
-  const location = useLocation();
+export default function Root() {
+  const isHome = useMatch({ path: "/", end: true });
 
   return (
     <>
-      {location.pathname === "/" ? (
-        <div className={`banner__section`}>
+      {isHome ? (
+        <div className="banner__section">
           <Header />
           <Banner />
         </div>
@@ -22,6 +22,4 @@ const Root = () => {
       <Footer />
     </>
   );
-};
-
-export default Root;
+}
