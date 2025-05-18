@@ -1,9 +1,9 @@
 {
+  "homepage": "https://navdeepjaswal.github.io/FitLife-With-Vatsa/",
   "name": "vatsa-dark",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
