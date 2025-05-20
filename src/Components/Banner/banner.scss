@@ -1,5 +1,6 @@
 //banner
 .banner__section{
+    min-height: 60vh;
     background: url("/src/assets/img/backgrounds/gradient.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,8 +14,6 @@
 }
 
 .banner__content{
-    margin: 0 auto;
-    width: fit-content;;
     padding: 140px 0 180px;
     h1{
         font-size: 116px;
@@ -71,61 +70,50 @@
             font-size: 48px;
             margin-bottom: 40px;
         }
-        .video__area{
-            gap: 24px;
-            .proces{
-                font-size: 20px;
-                width: 67px;
-            }
-        }
     }
     @include breakpoint(max-sm){
+        position: relative;
+        z-index: 1;
         padding: 60px 0 65px;
         h1{
-            font-size: 38px;
+            font-size: 48px;
             margin-bottom: 30px;
-        }
-        .video__area{
-            gap: 24px;
-            .proces{
-                font-size: 20px;
-                width: 67px;
-            }
-        }
-    }
-    @include breakpoint(max-sm){
-        padding: 60px 0 60px;
-        h1{
-            font-size: 34px;
-            margin-bottom: 30px;
-        }
-        .video__area{
-            gap: 24px;
-            .video__80{
-                width: 50px;
-                height: 50px;
-                cursor: pointer;
-            }
-            .proces{
-                font-size: 16px;
-            }
         }
     }
 }
 
-.banner__thumb{
+.banner__thumb {
     height: 95%;
     width: 100%;
     position: absolute;
     left: calc(50% - -120px);
     bottom: 0;
     @include breakpoint(max-xxl){
-        left: calc(50% - -80px);
+        left: calc(50% - 15px);
         max-width: 500px;
         img{
-            width: 100%;
+            height: 100% !important;
+            width: auto !important;
         }
     }
+
+    @include breakpoint(max-md){
+        left: calc(50% - 55px);
+        max-width: 500px;
+        img{
+            height: 100% !important;
+            width: auto !important;
+        }
+    }     
+    
+    @include breakpoint(max-xs){
+        left: calc(50% - 110px);
+        max-width: 500px;
+        img{
+            height: 100% !important;
+            width: auto !important;
+        }
+    }   
 }
 
 //animation text
@@ -155,7 +143,15 @@
 
 // Custom CSS
 .hone {
+    font-size: clamp(3rem, 10vw, 7.5rem);
+    width: fit-content;
     color: #ebbd44;
+    margin: 20px;
+    
+    @include breakpoint(max-md) {
+        -webkit-text-stroke: 2px black;
+        paint-order: stroke fill;
+    }
 }
 
 .hone-highlight{

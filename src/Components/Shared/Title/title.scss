@@ -19,7 +19,7 @@
 
 .project__head {
   max-width: 920px;
-  margin: 0 auto 60px;
+  margin: 0 auto 35px;
   h2 {
     font-size: 60px;
   }
@@ -29,12 +29,17 @@
     }
   }
   @include breakpoint(max-md) {
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     h2 {
       font-size: 36px;
     }
   }
   @include breakpoint(max-xs) {
+    .common__sub {
+      width: 280px;
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
     h2 {
       font-size: 29px;
     }

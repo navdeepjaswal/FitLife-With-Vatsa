@@ -5,33 +5,34 @@ $text-color: #333;
 $gray-light: #f5f5f5;
 $gray-medium: #666;
 $transition-duration: 0.3s;
-$primary-font: 'Inter', sans-serif;
+$primary-font: "Inter", sans-serif;
 
 html {
-    scrollbar-width: auto; 
-    scrollbar-color: #ebbd44 black;
+  scrollbar-width: auto;
+  scrollbar-color: #ebbd44 black;
 }
 
 html::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 html::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10px;
-    border: 4px solid #f1f1f1; 
+  background: #888;
+  border-radius: 10px;
+  border: 4px solid #f1f1f1;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+  background: #555;
 }
 
-body, .get__text {
+body,
+.get__text {
   font-family: $primary-font;
 }
 
@@ -43,19 +44,44 @@ body, .get__text {
     padding: 6rem 0;
   }
 
+  .emphasis {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  .yellow {
+    color: #edb04d;
+  }
+
+  .red {
+    color: #ff6565;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
   .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1350px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
+    gap: 30px;
+
+    @include breakpoint(max-xl) {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  }
+
+  .about-img {
+    width: 100%;
   }
 
   .header {
     text-align: center;
     margin-bottom: 3rem;
-    margin-right: 3rem;
 
     .icon {
       width: 3rem;
@@ -67,15 +93,15 @@ body, .get__text {
     .description {
       max-width: 48rem;
       margin: 0 auto;
-      font-size: 20px;
+      font-size: clamp(1rem, 1.2vw, 1.3rem);
       line-height: 1.75;
       color: $text-color;
     }
   }
-  
-  .content {
-    animation: fadeIn 0.8s ease-out;
-  }
+}
+
+.content {
+  animation: fadeIn 0.8s ease-out;
 }
 
 @keyframes fadeIn {
@@ -91,13 +117,14 @@ body, .get__text {
 .about-section {
   .common__sub::before,
   .common__sub::after {
-  content: none !important;
-  display: none !important;
+    content: none !important;
+    display: none !important;
   }
 }
-
-.about-section {
-  .common__sub {
-    font-size: 5rem !important;
+.common__sub {
+    font-size: clamp(3rem, 5vw, 6rem) !important;
+  @include breakpoint(max-sm) {  
+    width: 100%;
+    margin-bottom: 0;
   }
 }

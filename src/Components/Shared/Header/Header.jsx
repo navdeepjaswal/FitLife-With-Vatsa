@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { List, ArrowRight } from "react-bootstrap-icons";
-
-import Drawer from "../Drawer/Drawer";
 import logo from "../../../assets/img/logo/logo.png";
 
 const menuList = [
@@ -156,19 +154,9 @@ const Header = () => {
               <span></span>
               <span></span>
             </div>
-            <div
-              onClick={() => setIsSidebarActive(true)}
-              className="remove__click"
-            >
-              <List className="icon" />
-            </div>
           </div>
         </div>
       </div>
-      <Drawer
-        isSidebarActive={isSidebarActive}
-        setIsSidebarActive={setIsSidebarActive}
-      />
     </header>
   );
 };

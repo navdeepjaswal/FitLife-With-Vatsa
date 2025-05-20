@@ -1,5 +1,6 @@
 //<<<--- project --->>>>//
 .project__wrapone {
+  max-width: 100%;;
   columns: 2;
   width: 50rem;
   margin: 0 auto;
@@ -58,8 +59,9 @@
     height: 1px;
     background: var(--base);
   }
+  
   @include breakpoint(max-xs) {
-    width: 280px;
+    width: 100%;
     gap: 14px;
     &::before {
       left: 0;

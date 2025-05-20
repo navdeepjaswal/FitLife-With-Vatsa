@@ -170,3 +170,11 @@
     }
   }
 }
+
+.common__sub {
+    font-size: clamp(3rem, 5vw, 6rem) !important;
+  @include breakpoint(max-sm) {  
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
