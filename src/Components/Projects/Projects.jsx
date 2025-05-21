@@ -21,7 +21,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="project__section pt-120 pb-120" id="projects">
+    <section className="project__section pt-120 pb-120" id="client-transformations">
       <div className="container">
         <Title sortTitle={"Client Transformations"} size="3rem" />
 

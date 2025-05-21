@@ -9,7 +9,7 @@ const App = () => {
 useEffect(() => {
   const timer = setTimeout(() => {
     AOS.init();
-  }, 1500); // 1.5 seconds delay
+  }, 1500); 
 
   return () => clearTimeout(timer);
 }, []);

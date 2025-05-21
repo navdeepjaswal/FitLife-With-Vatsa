@@ -41,7 +41,7 @@ const reviewList = [
 
 const Testimonial = () => {
   return (
-    <section className="testimonial__section pt-120 pb-120" id="testimonial">
+    <section className="testimonial__section pt-120 pb-120" id="client-testimonials">
       <div className="container" 
       data-aos="fade-down" 
       data-aos-duration="1000"
