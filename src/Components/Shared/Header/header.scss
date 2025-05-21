@@ -406,40 +406,12 @@ button:hover , a:hover {
   color: black;
 }
 
-@keyframes shake {
-  0%, 18%, 100% {
-    transform: translateY(0);
-  }
-  6%, 12% {
-    transform: translateY(-5px);
-  }
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  5% { transform: scale(1.1); }
+  10% { transform: scale(1); }
 }
 
 .letsTalkBtn {
-  /* your existing styles… */
-  display: inline-flex;
-  align-items: center;
-  /* add the shake animation: */
-  animation: shake 6s ease-in-out infinite;
-  animation-duration: 0.6s;         /* each shake lasts 0.6s */
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 5s;              /* wait 5s before first shake */
-  animation-direction: normal;
-  animation-fill-mode: both;
-  animation-play-state: running;
-  animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  animation-delay: 5s;
-  animation-duration: 0.6s;
-  /* to space out repeats, use steps via animation: */
-  /* shorthand combining all: */
-  /* animation: shake 0.6s ease-in-out 5s infinite; */
-  /* then:*/
-  animation: shake 0.6s ease-in-out 5s infinite;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: normal;
-  animation-fill-mode: both;
+  animation: gentlePulse 5s ease-in-out infinite;
 }
-//>>>>> Header section <<<<<//

@@ -102,9 +102,9 @@ const Header = () => {
 
   return (
     <header className={`header-section `}>
-      <div className="container" 
-      data-aos="fade-down"
-      data-aos-duration="1000"
+      <div className="container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
       >
         <div className="header-wrapper">
           <div className="main__logo">
@@ -120,7 +120,7 @@ const Header = () => {
                     {name}
                   </HashLink>
                   {dropDown?.length && (
-                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active":""}`}>
+                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active" : ""}`}>
                       {dropDown.map(({ id, name, path }) => {
                         return (
                           <li key={id}>
@@ -137,15 +137,17 @@ const Header = () => {
             })}
           </ul>
           <div className="menu__components d-flex align-items-center">
-            <Link
-              to="/contact"
+            <a
+              href="https://flv.wufoo.com/forms/z1rtnsgc0tyg9c5/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="letsTalkBtn d-flex fw-500 cmn--btn align-items-center gap-2"
             >
               <span className="get__text">Let's Talk</span>
               <span>
                 <ArrowRight className="fz-20" />
               </span>
-            </Link>
+            </a>
             <div
               onClick={handleHeaderToggle}
               className={`header-bar d-lg-none ${menuActive ? "active" : ""}`}

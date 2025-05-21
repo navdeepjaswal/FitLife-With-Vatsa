@@ -1,3 +1,6 @@
+@import '../../scss/abstracts/mixins.scss';
+
+
 .get-in-touch {
   max-width: 600px;
   margin: 4rem auto 1rem auto;
@@ -15,6 +18,7 @@
   .subtitle {
     font-size: clamp(1rem, 1.2vw, 1.3rem);
     color: white;
+    white-space: normal;
     margin-bottom: 2rem;
   }
 
@@ -22,7 +26,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
 
     .icon {
       color: white;
@@ -38,15 +42,16 @@
     display: inline-block;
     padding: 0.75rem 2rem;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-    background-color: #000;
+    font-weight: 500;
+    color: black;
+    background-color: white;
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #333;
+      background-color: #edb04d;
+      color: black;
     }
   }
 }
@@ -61,4 +66,17 @@
   white-space: nowrap;
 }
 
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  5% { transform: scale(1.1); }
+  10% { transform: scale(1); }
+}
+
+.transform-btn {
+  animation: gentlePulse 5s ease-in-out infinite;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+}
 
