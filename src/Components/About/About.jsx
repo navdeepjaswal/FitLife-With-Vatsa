@@ -30,7 +30,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="about-section">
+    <section id="about-me" className="about-section">
       <div className="container">
         <div className="header">
           <div className="project__head text-center">

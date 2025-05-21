@@ -1,6 +1,13 @@
 import { Mail, Instagram } from "lucide-react";
 import "./GetInTouch.scss";
+import SubtitleList from "./SubtitleList";
 import Title from "../../Components/Shared/Title/Title";
+
+const lines = [
+  "Battling negative body image and low confidence?",
+  "Overwhelmed by mixed nutrition and workout tips?",
+  "Feeling stuck and guilty after a cheat?"
+];
 
 const GetInTouch = () => {
   return (
@@ -12,11 +19,7 @@ const GetInTouch = () => {
         data-aos-duration="1000"
         className="mt-6 max-w-2xl mx-auto"
       >
-        <p className="subtitle mb-8 text-lg leading-relaxed">
-          ━ Battling negative body image and low confidence? <br /><br />
-          ━ Overwhelmed by conflicting nutrition advice and workout plans? <br /><br />
-          ━ Guilty after indulging and stuck without motivation or progress? <br /><br />
-        </p>
+        <SubtitleList items={lines} />
 
         <a
           href="https://flv.wufoo.com/forms/z1rtnsgc0tyg9c5/"
@@ -26,23 +29,22 @@ const GetInTouch = () => {
         >
           Transform Today
         </a>
+      </div>
 
-         <div className="icons flex justify-center gap-6 mt-8">
-          <a
-            href="https://www.instagram.com/fitlifewithvatsa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon hover:text-red-500 transition"
-          >
-            <Instagram size={28} />
-          </a>
-          <a
-            href="mailto:youremail@example.com"
-            className="icon hover:text-red-500 transition"
-          >
-            <Mail size={28} />
-          </a>
-        </div>
+      <span className="divider"></span>
+
+      <div className="social-container">
+         <a
+              href="https://www.instagram.com/fitlifewithvatsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon transition"
+            >
+        <button className="social-button">
+          <p className="social-text">Reach out on Instagram </p>
+          <Instagram size={28} />
+        </button>
+        </a>
       </div>
     </section>
   );

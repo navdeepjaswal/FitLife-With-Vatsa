@@ -8,24 +8,25 @@ const menuList = [
   {
     id: 1,
     path: "/",
+    section: "#home",
     name: "Home",
   },
   {
     id: 2,
     path: "/",
-    section: "#about",
+    section: "#about-me",
     name: "About",
   },
   {
     id: 3,
     path: "/",
-    section: "#projects",
+    section: "#client-transformations",
     name: "Transformations",
   },
   {
     id: 4,
     path: "/",
-    section: "#testimonial",
+    section: "#client-testimonials",
     name: "Testimonials",
   },
   {

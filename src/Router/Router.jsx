@@ -14,7 +14,7 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    // Using "/" in dev so localhost:5173/ works,
+    // Using "/" in dev so localhost/ works,
     // Repo path in prod so GH Pages routes match.
     basename: import.meta.env.DEV
       ? "/"
