@@ -22,7 +22,7 @@ const GetInTouch = () => {
           href="https://flv.wufoo.com/forms/z1rtnsgc0tyg9c5/"
           target="_blank"
           rel="noopener noreferrer"
-          className="transform-btn block mx-auto mb-8 bg-red-500 px-8 py-4 rounded-lg shadow-md hover:bg-red-600 transition"
+          className="transform-btn fw-500 align-items-center gap-2"
         >
           Transform Today
         </a>
