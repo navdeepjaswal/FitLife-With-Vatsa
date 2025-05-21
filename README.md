@@ -34,9 +34,9 @@ Built to demonstrate front-end proficiency, with clean structure for easy expans
 - **ESLint + Prettier** for code quality & formatting  
 
 > _Other notable dependencies:_  
-> - `framer-motion` (if used for subtle UI transitions)  
-> - `clsx` or `classnames` helper (for conditional class names)  
-> - `dotenv` (if you integrate API keys later)
+> - `framer-motion` 
+> - `clsx` or `classnames` helper 
+> - `dotenv` 
 
 
 
