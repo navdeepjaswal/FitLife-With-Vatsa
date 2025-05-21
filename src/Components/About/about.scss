@@ -106,7 +106,8 @@ body,
 
 .content {
   animation: fadeIn 0.8s ease-out;
-  width: 55%;
+  min-width: 320px;
+  max-width: 48%;
 }
 
 @keyframes fadeIn {
