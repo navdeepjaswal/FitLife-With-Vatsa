@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+  const homePath = import.meta.env.DEV ? '/' : '/FitLife-With-Vatsa/';
+
 export default function NotFound() {
   return (
     <div style={{
@@ -16,7 +18,7 @@ export default function NotFound() {
       <p style={{ fontSize: '1.25rem', margin: '1rem 0' }}>
         Sorry, we can’t find that page.
       </p>
-      <Link to="/" style={{
+      <Link to={homePath} style={{
         display: 'inline-block',
         padding: '0.75em 1.5em',
         background: '#007acc',
