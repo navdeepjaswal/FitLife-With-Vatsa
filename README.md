@@ -1,6 +1,5 @@
 # FitLife-With-Vatsa
-
-> A single-page fitness coach website showcasing client transformations, services, and contact info. Built as a freelancing portfolio/demo project, it’s currently under active development with production deployment pending.
+A single-page fitness coach website showcasing client transformations, services, and contact info. Built as a freelancing portfolio/demo project, it’s currently under active development with production deployment pending.
 
 ## 🚀 Live Demo
 
