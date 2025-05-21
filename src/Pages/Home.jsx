@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { ScrollRestoration } from "react-router-dom";
-import AOS from "aos";            // ← import AOS
-import "aos/dist/aos.css";       // ← ensure the styles are in scope
+import AOS from "aos";           
+import "aos/dist/aos.css";
 
 import About from "../Components/About/About";
 import Projects from "../Components/Projects/Projects";
-import Metting from "../Components/Metting/Metting";
-import Services from "../Components/Services/Services";
-import WorkeProcess from "../Components/WorkeProcess/WorkeProcess";
 import Testimonial from "../Components/Testimonial/Testimonial";
-import Blogs from "../Components/Blogs/Blogs";
 import MarqueeWapper from "../Components/Shared/Marquee/MarqueeWapper";
 import Preloader from "../Components/Shared/Preloader/Preloader";
 import { images, images2 } from "../Utlits/marqueeItems";
@@ -44,11 +40,7 @@ const Home = () => {
           <About />
           <MarqueeWapper direction="right" items={images2} />
           <Projects />
-          {/* <Metting /> */}
-          {/* <Services isHeading={true} /> */}
-          {/* <WorkeProcess /> */}
           <Testimonial />
-          {/* <Blogs /> */}
           <GetInTouch />
           <ScrollRestoration />
         </>

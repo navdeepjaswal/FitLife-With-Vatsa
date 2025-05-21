@@ -4,7 +4,7 @@ import Title from "../../Components/Shared/Title/Title";
 
 const GetInTouch = () => {
   return (
-    <section className="get-in-touch text-center py-20 px-4">
+    <section id="get-in-touch" className="get-in-touch text-center py-20 px-4">
       <Title sortTitle={"Ready to Transform?"} />
 
       <div
@@ -29,7 +29,7 @@ const GetInTouch = () => {
 
          <div className="icons flex justify-center gap-6 mt-8">
           <a
-            href="https://www.instagram.com/yourusername"
+            href="https://www.instagram.com/fitlifewithvatsa"
             target="_blank"
             rel="noopener noreferrer"
             className="icon hover:text-red-500 transition"

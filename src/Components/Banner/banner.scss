@@ -14,12 +14,14 @@
 }
 
 .banner__content{
+    width: fit-content;
     position: relative;
     z-index: 2;
+    margin-top: 4rem;
     padding: 140px 0 180px;
     
     h1 {
-        font-size: clamp(3rem, 10vw, 7.5rem);
+        font-size: clamp(5rem, 10vw, 7.5rem);
         margin-bottom: 50px;
     }
     .video__area{
@@ -147,7 +149,7 @@
 // Custom CSS
 .hone {
     font-size: clamp(3rem, 10vw, 7.5rem);
-    width: fit-content;
+    width: fit-content !important;
     color: #ebbd44;
     margin: 20px;
     
