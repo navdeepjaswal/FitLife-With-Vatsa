@@ -185,7 +185,7 @@ const ProtfolioDetails = () => {
             </h2>
           </div>
 
-          <div className=" project__wrapone">
+          <div className="project__wrapone">
             {projectList
               .slice(0, 2)
               .map(({ heading, id, image, subHeading }, index) => (

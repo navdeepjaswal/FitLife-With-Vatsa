@@ -112,8 +112,16 @@ const About = () => {
   const aboutData = {
     name: 'Vatsa',
     title: 'Professional Fitness Coach',
-    description: "I'm Vatsa, a fitness coach committed to helping you build powerful, lasting habits that drive real transformation. My mission is to equip you with the tools, mindset, and guidance needed to thrive—long after our coaching ends.",
-    desctiption2: "Through a personalized, results-driven approach, I help make fitness a natural and sustainable part of your life, so you never need to start over again.",
+    description: (
+      <>
+        Hello, I’m <span className="yellow"> Vatsa</span>! I help people build <span className="red">lasting</span> fitness habits.
+        <br/><br/>
+        I’m dedicated to simplifying fitness and helping Working  Professionals like you achieve your fitness goals without many sacrifices. 
+        With a focus on sustainable habits seamlessly integrated into your busy lifestyle, together we’ll optimize your health and well-being for the long haul.
+        <br/><br/>
+        <span className="emphasis">No False Promises. No BS.</span>
+      </>
+    ),
     email: 'vatsa@example.com',
     location: 'San Francisco, CA',
     experience: '8+ years experience',
@@ -135,15 +143,14 @@ const About = () => {
             sortTitle={"About Me"}
           />
         </div>
-          <div data-aos="fade-down"  data-aos-duration="1000">
-            <p className="description">{aboutData.description}</p> <br/>
-            <p className="description">{aboutData.desctiption2} </p> 
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <p className="description">{aboutData.description}</p>
           </div>
           
         </div>
 
-        <div className="content" data-aos="fade-left"  data-aos-duration="1000">
-          <img src={vatsa}></img>
+        <div className="content">
+          <img className="about-img"src={vatsa}  data-aos="fade-up" data-aos-duration="1000"></img>
         </div>
       </div>
     </section>

@@ -6,9 +6,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const App = () => {
-  useEffect(() => {
+useEffect(() => {
+  const timer = setTimeout(() => {
     AOS.init();
-  }, []);
+  }, 1500); // 1.5 seconds delay
+
+  return () => clearTimeout(timer);
+}, []);
+
   return (
     <>
       <RouterProvider router={router} />

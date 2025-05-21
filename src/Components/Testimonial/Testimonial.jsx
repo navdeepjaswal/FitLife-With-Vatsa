@@ -36,19 +36,18 @@ const reviewList = [
     personalized plan. His support, accountability, and guidance made all the difference. 
     I lost 21 lbs and gained lasting habits."`,
     stars: 5,
-  }
+  },
 ];
 
 const Testimonial = () => {
   return (
     <section className="testimonial__section pt-120 pb-120" id="testimonial">
-      <div className="container">
+      <div className="container" 
+      data-aos="fade-down" 
+      data-aos-duration="1000"
+      >
         <div className="project__head text-center">
-          <Title
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            sortTitle={"Testimonials"}
-          />
+          <Title sortTitle={"Testimonials"} />
         </div>
         <div
           className="testimonial__v1wrap"

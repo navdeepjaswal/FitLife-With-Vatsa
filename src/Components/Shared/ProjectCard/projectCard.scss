@@ -1,6 +1,5 @@
 .project__item {
   overflow: hidden;
-  // margin: 40px 10px;
   padding: 20px;
   
   .thumb {
@@ -56,8 +55,10 @@
       }
     }
   }
-  @include breakpoint(max-xs) {
+  @include breakpoint(max-md) {
     .content {
+      justify-content: center !important;
+
       .left__cont {
         span {
           font-size: 16px;
