@@ -35,7 +35,7 @@ const Projects = () => {
             transition={{ duration: 1, ease: "anticipate" }}
           >
             <div className="project__wrapone"
-              data-aos="fade-down"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
               {projectList.slice(0, visibleCount).map(({ id, image, subHeading }, index) => (

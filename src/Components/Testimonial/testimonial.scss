@@ -121,12 +121,9 @@
     z-index: 1;
     position: absolute;
     animation: cir5 2s linear infinite;
-    @include breakpoint(max-lg) {
+    @include breakpoint(max-xsmall) {
       bottom: 15px;
       right: 15px;
-    }
-    @include breakpoint(max-xs) {
-      display: none;
     }
   }
 }

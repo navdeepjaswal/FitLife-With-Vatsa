@@ -119,7 +119,7 @@ const About = () => {
         I’m dedicated to simplifying fitness and helping Working  Professionals like you achieve your fitness goals without many sacrifices. 
         With a focus on sustainable habits seamlessly integrated into your busy lifestyle, together we’ll optimize your health and well-being for the long haul.
         <br/><br/>
-        <span className="emphasis red">No false promises, no BS.</span>
+        <span className="emphasis">No false promises. No BS.</span>
       </>
     ),
     email: 'vatsa@example.com',

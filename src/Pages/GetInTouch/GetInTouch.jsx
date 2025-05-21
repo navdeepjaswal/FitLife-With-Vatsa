@@ -8,7 +8,6 @@ const GetInTouch = () => {
 
         <Title
           sortTitle={"Get in Touch ."}
-          size="3rem"
         />
 
         <div data-aos="fade-down"  data-aos-duration="1000">

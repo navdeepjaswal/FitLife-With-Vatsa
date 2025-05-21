@@ -10,6 +10,7 @@ $primary-font: "Inter", sans-serif;
 html {
   scrollbar-width: auto;
   scrollbar-color: #ebbd44 black;
+  min-width: 320px;
 }
 
 html::-webkit-scrollbar {
@@ -46,7 +47,10 @@ body,
 
   .emphasis {
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-underline-offset: 8px;
+    background: #dddddd2b;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .yellow {
@@ -122,7 +126,7 @@ body,
   }
 }
 .common__sub {
-    font-size: clamp(3rem, 5vw, 6rem) !important;
+    font-size: clamp(3rem, 4vw, 6rem) !important;
   @include breakpoint(max-sm) {  
     width: 100%;
     margin-bottom: 0;
