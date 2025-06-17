@@ -130,7 +130,7 @@
 }
 
 .transform-btn {
-  animation: bounce 5s ease-in-out infinite;
+  // animation: bounce 5s ease-in-out infinite;
   background-color: white;
   color: black;
   padding: 20px;
@@ -153,7 +153,7 @@
     gap: 12px;
     border: 0px;
     font-weight: 500;
-    animation: bounce 5s ease-in-out infinite;
+    // animation: bounce 5s ease-in-out infinite;
      transition: background-color 0.3s;
     
     &:hover {
