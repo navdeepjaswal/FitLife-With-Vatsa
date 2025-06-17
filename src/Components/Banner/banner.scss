@@ -152,6 +152,12 @@
     width: fit-content !important;
     color: #ebbd44;
     margin: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.04em;
+    
+    @include breakpoint(lg) {
+        font-size: clamp(6rem, 10vw, 10rem);
+    }
     
     @include breakpoint(max-md) {
         -webkit-text-stroke: 2px black;
@@ -159,8 +165,10 @@
     }
 }
 
-.hone-highlight{
+.hone-highlight {
     color: #ed1c24;
+    font-family: inherit;
+    letter-spacing: inherit;
 }
 
 .banner-man {
