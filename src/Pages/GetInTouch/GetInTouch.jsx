@@ -33,7 +33,10 @@ const GetInTouch = () => {
 
       <span className="divider"></span>
 
-      <div className="social-container">
+      <div 
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      className="social-container">
          <a
               href="https://www.instagram.com/fitlifewithvatsa"
               target="_blank"
