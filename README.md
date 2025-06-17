@@ -1,5 +1,6 @@
 # FitLife-With-Vatsa
-A single-page fitness coach website showcasing client transformations, services, and contact info. Built as a freelancing portfolio/demo project, it’s currently under active development with production deployment pending.
+
+A **freelancing** single-page fitness coach website—currently a work in progress—for showcasing client transformations, services, and contact info. Vatsa, the trainer who coached me, asked me to build this fresh site because his current site (https://fitlifewithvatsa.com/) is outdated, too lengthy, and buggy.
 
 ## 🚀 Live Demo
 
@@ -11,14 +12,13 @@ https://navdeepjaswal.github.io/FitLife-With-Vatsa/
 
 FitLife-With-Vatsa is a responsive, animation-driven landing site for a fitness trainer. It highlights:
 
-- **Hero section** highlighting Vatsa  
-- **Transformations** gallery (client “before & after”)  
-- **Services & testimonials** powered by SCSS grid layouts  
-- **Lightbox** for enlarged project images  
-- **“Get In Touch”** form link to Google Forms (& Instagram CTA)  
-- Smooth scroll and section-entry animations
+- **Hero Section**: A bold introduction to Vatsa and his coaching philosophy  
+- **Transformations Gallery**: “Before & after” client photos with lightbox view  
+- **Services & Testimonials**: Clean SCSS grid layouts to showcase offerings and success stories  
+- **Contact & Booking**: “Get In Touch” form link to Google Forms and Instagram CTA  
+- **Smooth Animations**: Scroll-triggered effects and section-entry transitions powered by AOS  
 
-Built to demonstrate front-end proficiency, with clean structure for easy expansion into a fully featured marketing site.
+> ⚙️ **Status**: In the works—actively being developed and refined.
 
 ---
 
@@ -26,17 +26,9 @@ Built to demonstrate front-end proficiency, with clean structure for easy expans
 
 - **[React](https://reactjs.org/)** (via [Vite](https://vitejs.dev/))  
 - **React Router v6** for client-side routing  
-- **SCSS** modules & partials for styling (BEM-inspired class naming)  
-- **AOS** (Animate On Scroll) library for scroll-triggered animations  
-- **React-Lightbox** component for image modals  
-- **React-Bootstrap-Icons** for scalable SVG icons  
+- **SCSS modules** & partials with BEM-inspired conventions  
+- **AOS** (Animate On Scroll) for scroll-based animations  
+- **React-Lightbox** for image modals  
+- **React-Bootstrap-Icons** for SVG icons  
 - **GitHub Pages** for static deployment  
-- **ESLint + Prettier** for code quality & formatting  
-
-> _Other notable dependencies:_  
-> - `framer-motion` 
-> - `clsx` or `classnames` helper 
-> - `dotenv` 
-
-
-
+- **ESLint + Prettier** for linting & formatting  
